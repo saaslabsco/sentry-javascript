@@ -24,6 +24,26 @@
     "./package.json": "./package.json",
     ".": {
       "types": "./build/types/index.types.d.ts",
+      "edge": {
+        "import": "./build/esm/index.edge.js",
+        "require": "./build/cjs/index.edge.js",
+        "default": "./build/esm/index.edge.js"
+      },
+      "edge-light": {
+        "import": "./build/esm/index.edge.js",
+        "require": "./build/cjs/index.edge.js",
+        "default": "./build/esm/index.edge.js"
+      },
+      "worker": {
+        "import": "./build/esm/index.edge.js",
+        "require": "./build/cjs/index.edge.js",
+        "default": "./build/esm/index.edge.js"
+      },
+      "workerd": {
+        "import": "./build/esm/index.edge.js",
+        "require": "./build/cjs/index.edge.js",
+        "default": "./build/esm/index.edge.js"
+      },
       "browser": {
         "import": "./build/esm/index.client.js",
         "require": "./build/cjs/index.client.js"
@@ -61,6 +81,7 @@
     "@sentry/react": "8.30.0",
     "@sentry/types": "8.30.0",
     "@sentry/utils": "8.30.0",
+    "@sentry/vercel-edge": "8.30.0",
     "glob": "^10.3.4",
     "opentelemetry-instrumentation-remix": "0.7.1",
     "yargs": "^17.6.0"

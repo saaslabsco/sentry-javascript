@@ -3,7 +3,7 @@ import { makeBaseNPMConfig, makeNPMConfigVariants, makeOtelLoaders } from '@sent
 export default [
   ...makeNPMConfigVariants(
     makeBaseNPMConfig({
-      entrypoints: ['src/index.server.ts', 'src/index.client.tsx'],
+      entrypoints: ['src/index.server.ts', 'src/index.client.tsx', 'src/index.edge.ts'],
       packageSpecificConfig: {
         external: ['react-router', 'react-router-dom', 'react', 'react/jsx-runtime'],
         output: {
